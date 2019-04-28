@@ -16,9 +16,8 @@ const uri = "mongodb+srv://vibhu_mst_user:QuC7dS0PiNYjdGW0@hackbugdb-98dz6.mongo
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   db = client.db("HackBugDB");
-  // perform actions on the collection object
-  //client.close();
 });
+
 
 
 router.use(bodyParser.urlencoded({extended: true}));
